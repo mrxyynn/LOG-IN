@@ -1,0 +1,87 @@
+body {
+      font-family: Fredoka, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f0f0f0;
+      background-size: cover;
+    }
+
+    #container {
+      height: 550px;
+      width: 350px;
+      border-radius: 18px;
+      display: inline-block;
+      margin-left: 3px;
+      margin-top: 50px;
+      background-color: white;
+      border: 5px solid #90E0EF;
+       }
+
+    #display {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      width: 300px;
+      height: 40px;
+      text-align: center;
+      margin-bottom: 50px;
+      border: none;
+      background-color: #90E0EF;
+      color: white;
+      border-radius: 18px;
+      
+    }
+
+    .pin-pad {
+      display: grid;
+      grid-template-columns: repeat(3, 60px);
+      grid-gap: 20px;
+      justify-content: center;
+      
+      
+    }
+
+    .btn {
+      height: 60px;
+      background-color: #90E0EF;
+      border: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 60px;
+      cursor: pointer;
+      text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 20px #0ff,
+                   0 0 30px #0ff,
+                   0 0 40px #0ff,
+                   0 0 50px #0ff,
+                   0 0 60px #0ff;
+       }
+       
+       .btn:hover {
+       -webkit-tap-highlight-color: transparent;
+       background-color: #61A5C2;
+       transform: scale(1.1);
+        }
+        
+       .btn:active {
+        background-color: #61A5C2;
+       transform: scale(0.95);
+       }
+       
+     ::placeholder {
+  color: white;
+  }
+
+     .cinnamoroll {
+         height: 70px;
+         margin-top: 8px;
+         display: inline-block;
+     }
+     
+     .clues {
+         margin-bottom: 25px;
+         font-weight: bold;
+         color: #90E0EF;
+     }

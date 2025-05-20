@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+</head>
+
+<body background= "c018d9aee824be66e6348cc2e4cf4843.jpg">
+    
+    <div id="container">
+    <p class="clues">clue : the day we talked</p>
+    <input type="password" id="display" disabled placeholder="Enter your password">
+    <div class="pin-pad">
+      <button class="btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn" onclick="appendToDisplay('*')">*</button>
+      <button class="btn" onclick="appendToDisplay('0')">0</button>
+      <button class="btn" onclick="appendToDisplay('#')">#</button>
+      <img src="snowy.gif" class="cinnamoroll" 
+    </div>
+  </div>
+  
+  <script>
+    const correctPIN = "101824";
+
+    function appendToDisplay(value) {
+      const display = document.getElementById("display");
+      display.value += value;
+
+      if (display.value === correctPIN) {
+        window.location.href = "http://localhost:8080/index2.html"; // Replace with your URL
+      }
+
+      if (display.value.length >= correctPIN.length && display.value !== correctPIN) {
+        alert("aw, you don't remember na ba baby? :((");
+        display.value = "";
+      }
+    }
+    
+  </script>
+  
+</body>
+</html>
